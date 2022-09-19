@@ -5,8 +5,15 @@ export default generateMarkdown;
 function renderLicenseBadge(license) {
 if (license.name === "MIT") {
   license.link = "https://opensource.org/licenses/MIT";
-  license.badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+  license.badge = `[![License: MIT](https://img.shields.io/badge/license-MIT-green)]`
+} else if (license.name === "Apache") {
+  license.link = "https://opensource.org/licenses/Apache";
+  license.badge = `[![License: Apache](https://img.shields.io/badge/license-Apache-blue)]`
+} else if (license.name === "none") {
+  license.link = "https://opensource.org/licenses/None";
+  license.badge = `[![License: None](https://img.shields.io/badge/license-none-red)]`
 }
+
 
 }
 
@@ -20,7 +27,17 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# Title 
+  let license = {
+    name: `${data.license}`,
+    badge: "",
+  };
+  renderLicenseBadge(license);
+  
+  
+  return `
+  ${license.badge}
+  
+  # Title 
   ${data.title}
   ## Description
   ${data.description}
@@ -51,7 +68,11 @@ function generateMarkdown(data) {
   #### Author
   ${data.name}
  
+
+
 `;
+
+
 }
 
 
