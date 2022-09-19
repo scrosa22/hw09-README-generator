@@ -1,9 +1,11 @@
 // TODO: Include packages needed for this application
-// import inquirer from "inquirer";
-const inquirer = require('inquirer')
-// import {writeFile} from "fs";
-// import generateMarkdown from "./utils/generateMarkdown.js";
+import inquirer from "inquirer";
+import generateMarkdown from "./utils/generateMarkdown.js";
+
+import fs from 'fs'
+
 console.log("README Generator init");
+
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -65,15 +67,23 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function generateReadeMe (data) {
+  fs.writeFile("./completed/README.md", data, err => {
+    if (err) {
+      return console.log(err)
+    } else {
+      console.log('README created')
+    }
+  })
+}
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer
     .prompt(questions)
     .then((data) => {
-      const response = generateMarkdown(data);
-      createReadMe(response);
+      const responses = generateMarkdown(data);
+      generateReadeMe(responses);
     })
     .catch((err) => console.log(err));
 }

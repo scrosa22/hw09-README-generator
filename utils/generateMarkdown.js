@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-
+export default generateMarkdown;
 
 function renderLicenseBadge(license) {
 if (license.name === "MIT") {
@@ -20,15 +20,35 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# Title 
+  ${data.title}
+  ## Description
   ${data.description}
+
+  ## Table of Contents
+  -[Installation](#installation)
+  -[Use](#use)
+  -[Features](#features)
+  -[Contributing](#contribute)
+  -[Test](#testing)
+  -[Author Information](#information)
+
+  ### Installation
   ${data.installation}
+  ### Use
   ${data.use}
+  ### Features
   ${data.features}
+  ### Contribution
   ${data.contribute}
+  ### Test
   ${data.test}
+  ## Author Information
+  #### GitHub 
   ${data.github}
+  #### eMail
   ${data.email}
+  #### Author
   ${data.name}
  
 `;
@@ -39,4 +59,3 @@ function generateMarkdown(data) {
 
 
 
-module.exports = generateMarkdown;
