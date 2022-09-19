@@ -2,9 +2,9 @@
   [![License: MIT](https://img.shields.io/badge/license-MIT-green)]
   
   # Title 
-  ReadMe Generator
+  README Generator 
   ## Description
-  this app was created to provide the user with a completed readme by following a simple prompt
+  This is created to provide the user with a completed REDME by following simple promts
 
   ## Table of Contents
   -[Installation](#installation)
@@ -17,20 +17,20 @@
   ### Installation
   undefined
   ### Use
-  used to assist in application creation
+  used to assist in the creation of a README file
   ### Features
-  features include...
+  features include ... ... 
   ### Contribution
   undefined
   ### Test
-  testing via trial and error
+  test via trial and error
   ## Author_Information
   #### GitHub 
-  srosa
+  scrosa22
   #### eMail
-  srosa
+  scrosa22
   #### Author
-  srosa
+  s rosa
  
 
 
