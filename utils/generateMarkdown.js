@@ -31,7 +31,7 @@ function generateMarkdown(data) {
   -[Features](#features)
   -[Contribution](#contribution)
   -[Test](#test)
-  -[Author Information](#author information)
+  -[Author_Information](#author_information)
 
   ### Installation
   ${data.installation}
@@ -43,7 +43,7 @@ function generateMarkdown(data) {
   ${data.contribute}
   ### Test
   ${data.test}
-  ## Author Information
+  ## Author_Information
   #### GitHub 
   ${data.github}
   #### eMail
