@@ -10,7 +10,7 @@ if (license.name === "MIT") {
   license.link = "https://opensource.org/licenses/Apache";
   license.badge = `[![License: Apache](https://img.shields.io/badge/license-Apache-blue)]`
 } else if (license.name === "none") {
-  license.link = "https://opensource.org/licenses/None";
+  license.link = "None";
   license.badge = `[![License: None](https://img.shields.io/badge/license-none-red)]`
 }
 
