@@ -29,9 +29,9 @@ function generateMarkdown(data) {
   -[Installation](#installation)
   -[Use](#use)
   -[Features](#features)
-  -[Contributing](#contribute)
-  -[Test](#testing)
-  -[Author Information](#information)
+  -[Contribution](#contribution)
+  -[Test](#test)
+  -[Author Information](#author information)
 
   ### Installation
   ${data.installation}
